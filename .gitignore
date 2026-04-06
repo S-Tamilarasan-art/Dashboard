@@ -39,3 +39,27 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Docker local overrides
+docker-compose.override.yml
+docker-compose.local.yml
+
+# Docker data/volumes (if you use local folders for persistence)
+.docker/data/
+docker_volumes/
+*.vol/
+
+# Specific Docker Desktop logs/metadata
+.docker/
+# Docker
+docker-compose.yml
+*.log
+
+# OS / editor
+.vscode/
+.idea/
+
+# temp
+tmp/
+temp/
