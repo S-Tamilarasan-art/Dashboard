@@ -14,6 +14,7 @@ import {
   LogOut,
   Menu,
   X,
+  Medal,
 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
@@ -137,10 +138,8 @@ export function Sidebar() {
 
       {/* Download App Card */}
       <div className="p-4 m-4 bg-gray-900 text-white rounded-2xl">
-        <div className="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center mb-3">
-          <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-            <circle cx="12" cy="12" r="10" />
-          </svg>
+        <div className="size-10 rounded-full bg-white flex items-center justify-center mb-3">
+      <Medal className='text-emerald-700'/>
         </div>
         <h4 className="font-bold text-sm mb-1">Download our Mobile App</h4>
         <p className="text-xs text-gray-300 mb-3">Get easy in another way</p>
