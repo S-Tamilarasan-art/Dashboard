@@ -212,7 +212,7 @@ const progress = 71; // Total progress (Completed + In Progress)
                      <p className="text-[10px] text-slate-400 mt-1">Working on <span className="text-slate-600 font-bold">{m.task}</span></p>
                    </div>
                 </div>
-                <span className={`text-[10px] font-bold px-2.5 py-1 rounded-md border ${m.color}`}>{m.status}</span>
+                <span className={`text-[10px] font-bold px-2.5 py-1 rounded-md border whitespace-nowrap ${m.color}`}>{m.status}</span>
               </div>
             ))}
           </div>
