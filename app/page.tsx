@@ -42,12 +42,12 @@ export default function Dashboard() {
       </header>
 <div className='bg-gray-50 p-4 md:p-4 rounded-md border'>
       {/* --- DASHBOARD TITLE --- */}
-      <div className="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-8 ">
+      <div className="flex flex-wrap flex-col md:flex-row md:items-end justify-between gap-4 mb-8 ">
         <div>
           <h1 className="text-4xl font-black tracking-tight text-slate-900">Dashboard</h1>
           <p className="text-slate-500 mt-1">Plan, prioritize, and accomplish your tasks with ease.</p>
         </div>
-        <div className="flex items-center justify-center sm:flex-col gap-1 md:gap-3">
+        <div className="flex items-center justify-center  gap-1 md:gap-3">
           <Button className="bg-emerald-900 hover:bg-emerald-950 text-white rounded-full px-6">＋ Add Project</Button>
           <Button variant="outline" className="rounded-full px-6 border-slate-300">Import Data</Button>
         </div>
