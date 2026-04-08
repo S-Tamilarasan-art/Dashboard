@@ -335,7 +335,7 @@ function StatCard(
 ) {
   return (
     <div className={`p-6 rounded-2xl transition-all ${
-      active ? 'bg-gradient-to-l from-[#1f5f3f] via-[#477d2e] to-[#1f5f3f] text-white border-transparent' : 'bg-white text-slate-900 border-slate-200'
+      active ? 'bg-[#0C4E2D] bg-[radial-gradient(circle_at_bottom_left,rgba(167,243,62,0.7),transparent_50%),radial-gradient(circle_at_top_right,rgba(167,243,62,0.3),transparent_30%)] text-white border-transparent' : 'bg-white text-slate-900 border-slate-200'
     }`}>
       <div className="flex justify-between items-start mb-6">
         <span className={`text-lg font-semibold ${active ? 'opacity-80' : 'text-black'}`}>{title}</span>
