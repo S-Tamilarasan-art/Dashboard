@@ -26,7 +26,7 @@ const progress = 71; // Total progress (Completed + In Progress)
   ];
 
   return (
-    <div className="min-h-screen bg-white p-4 md:p-4 font-sans text-slate-900 ">
+    <div className="min-h-screen bg-white px-2 font-sans text-slate-900 ">
       
       {/* --- HEADER --- */}
       <header className="flex flex sm:flex-row flex-wrap md:flex-row items-center justify-between gap-1 md:gap-4 mb-2 bg-gray-50 p-4 rounded-2xl  ">

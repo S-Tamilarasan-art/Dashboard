@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en">
       
       <body className="font-sans antialiased">
-        <div className="flex h-screen">
+      <div className="flex h-dvh w-full p-4">
           <Sidebar />
           <main className="flex-1 overflow-auto">
             {children}
