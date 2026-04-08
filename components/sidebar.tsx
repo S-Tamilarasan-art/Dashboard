@@ -154,7 +154,7 @@ export function Sidebar() {
                       <h4 className="font-bold text-lg font-thin mb-1"><span className='font-light'>Download</span> our <br></br> Mobile App</h4>
         <p className="text-xs text-gray-300 mb-3">Get easy in another way</p>
               
-              <button className="w-full bg-[#1B7344] hover:bg-[#155a35] text-white font-semibold py-3.5 rounded-[20px] transition-all text-sm shadow-lg shadow-emerald-900/20">
+              <button className="w-full bg-[#1B7344] hover:bg-[#155a35] text-white font-semibold py-3.5 rounded-3xl transition-all text-sm shadow-lg shadow-emerald-900/20">
                 Download
               </button>
             </div>
