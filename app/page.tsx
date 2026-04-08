@@ -3,7 +3,7 @@ import { Search, Mail, Bell, ArrowUpRight, Triangle, MoreVertical, Play, Square,
 import { Button } from '@/components/ui/button';
 
 export default function Dashboard() {
-const progress = 71; // Total progress (Completed + In Progress)
+const progress = 76; // Total progress (Completed + In Progress)
   const completedPart = 60; // The lighter green part
   
   const radius = 80;
@@ -42,8 +42,8 @@ const progress = 71; // Total progress (Completed + In Progress)
         
         <div className="flex items-center gap-2 md:gap-4">
           <div className="flex gap-2">
-            <Button variant="ghost" size="icon" className="rounded-full bg-white border size-13 "><Mail className="size-5" /></Button>
-            <Button variant="ghost" size="icon" className="rounded-full bg-white border size-13 "><Bell className="size-5" /></Button>
+            <Button  variant="ghost" size="icon" className="rounded-full bg-white  size-13 shadow-none "><Mail className="size-5" /></Button>
+            <Button  variant="ghost" size="icon"  className="rounded-full bg-white  size-13 "><Bell className="size-5" /></Button>
           </div>
           <div className="flex items-center md:gap-3  ">
             <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Totok" sizes='icon' className="size-13 rounded-full bg-orange-100" alt="avatar" />
@@ -61,7 +61,7 @@ const progress = 71; // Total progress (Completed + In Progress)
           <h1 className="text-4xl font-semibold tracking-tight text-slate-900">Dashboard</h1>
           <p className="text-gray-400 mt-1 text-sm">Plan, prioritize, and accomplish your tasks with ease.</p>
         </div>
-        <div className="flex items-center justify-center  gap-1 md:gap-3">
+        <div className="flex items-center justify-center flex-wrap  gap-1 md:gap-3">
           <Button className="bg-emerald-900 hover:bg-emerald-950 text-white rounded-full px-6 py-5">＋ Add Project</Button>
           <Button variant="outline" className="rounded-full px-6 py-5 border-emerald-900 text-emerald-900">Import Data</Button>
         </div>
@@ -105,7 +105,7 @@ const progress = 71; // Total progress (Completed + In Progress)
 </div>}
         <div
           className={`
-            w-6 sm:w-10 md:w-12 rounded-full transition-all
+            w-6 sm:w-12 md:w-14 rounded-full transition-all
             ${
               i === 3
                 ? 'bg-emerald-900 h-24 sm:h-32 md:h-40'
@@ -138,7 +138,7 @@ const progress = 71; // Total progress (Completed + In Progress)
               <p className="font-semibold  text-lg text-emerald-800 leading-tight">Meeting with Arc <br></br> Company</p>
               <p className="text-sm text-slate-400">Time : 02.00 pm - 04.00 pm</p>
             </div>
-             <Button className=" bg-gradient-to-r from-[#1f5f3f] via-[#2e7d56] to-[#1f5f3f] w-full  hover:bg-emerald-800 text-white rounded-3xl py-6 font-bold flex gap-2">
+             <Button className=" bg-gradient-to-r from-[#1f5f3f] via-[#2e7d56] to-[#1f5f3f] w-full  hover:bg-emerald-800 text-white rounded-4xl py-7 font-extrabold flex gap-2">
               <Video className="size-6 fill-white" /> Start Meeting
             </Button>
           </div>
@@ -167,7 +167,7 @@ const progress = 71; // Total progress (Completed + In Progress)
             ))}
           </div>
           </div>
-  <div className="bg-emerald-950 rounded-md  w-full p-4 text-white relative overflow-hidden flex flex-col self-end justify-around h-full">
+  <div className="bg-emerald-950 rounded-2xl  w-full p-4 text-white relative overflow-hidden flex flex-col  h-full">
           {/* Abstract Wave Background Effect */}
           <div className="absolute top-0 right-0 w-full h-full opacity-20 pointer-events-none">
             <div className="absolute top-[-20%] right-[-10%] w-[120%] h-[120%] rounded-full border-[1px] border-white/50" />
@@ -176,9 +176,9 @@ const progress = 71; // Total progress (Completed + In Progress)
              
           </div>
 
-          <h3 className="text-md font-medium ">Time Tracker</h3>
-          <div className="relative z-10 text-center flex flex-col items-center justify-center">
-            <p className="text-4xl font-semibold tracking-widest my-4">01:24:08</p>
+          <h3 className="text-2xl font-medium px-2 py-2 ">Time Tracker</h3>
+          <div className="relative z-10 text-center flex flex-col items-center justify-center m-auto">
+            <p className="text-5xl font-semibold tracking-widest my-4 mx-auto">01:24:08</p>
             <div className="flex justify-center gap-3">
               <button className="size-10 rounded-full bg-white flex items-center justify-center text-emerald-950 shadow-lg hover:scale-110 transition-transform">
                 <Pause className="size-6 fill-emerald-950" />
@@ -193,7 +193,7 @@ const progress = 71; // Total progress (Completed + In Progress)
 
         {/* Team Collaboration - Spans 6/12 columns */}
         <div className="lg:col-start-1 lg:col-end-6 bg-white  rounded-2xl p-8 ">
-          <div className="flex items-center justify-between mb-8">
+          <div className="flex items-center justify-between flex-wrap mb-8">
             <h3 className="text-lg font-bold">Team Collaboration</h3>
             <Button variant="outline" size="sm" className="rounded-full border-emerald-800 text-emerald-800 text-[10px] h-7 hover:bg-emerald-50">＋ Add Member</Button>
           </div>
@@ -204,7 +204,7 @@ const progress = 71; // Total progress (Completed + In Progress)
               { name: 'Isaac Oluwatemilorun', task: 'Develop Search and Filter Functionality', status: 'Pending', color: 'bg-orange-50 text-orange-700' },
              { name: 'David Oshodi', task: 'Responsive layout for Home page',status: 'In Progress', color: 'bg-yellow-50 text-yellow-700' },
             ].map((m, i) => (
-              <div key={i} className="flex items-center justify-between gap-4">
+              <div key={i} className="flex items-center justify-between flex-wrap gap-4">
                 <div className="flex items-center gap-3">
                    <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${m.name}`} className="size-9 rounded-full" alt="member" />
                    <div>
@@ -239,7 +239,7 @@ const progress = 71; // Total progress (Completed + In Progress)
               {/* White shows the path */}
               <rect x="0" y="0" width="200" height="120" fill="white" />
               {/* Black circle "bites" a hole out of the dark green path */}
-              <circle cx={cutX} cy={cutY} r="11" fill="black" />
+              <circle cx={cutX} cy={cutY} r="15" fill="black" />
             </mask>
           </defs>
 
@@ -248,7 +248,7 @@ const progress = 71; // Total progress (Completed + In Progress)
             d="M 20,100 A 80,80 0 0 1 180,100"
             fill="none"
             stroke="url(#stripes)"
-            strokeWidth="22"
+            strokeWidth="30"
             strokeLinecap="round"
           />
 
@@ -257,7 +257,7 @@ const progress = 71; // Total progress (Completed + In Progress)
             d="M 20,100 A 80,80 0 0 1 180,100"
             fill="none"
             stroke="#2D8453"
-            strokeWidth="22"
+            strokeWidth="30"
             strokeLinecap="round"
             style={{
               strokeDasharray: `${circumference}`,
@@ -271,7 +271,7 @@ const progress = 71; // Total progress (Completed + In Progress)
             d="M 20,100 A 80,80 0 0 1 180,100"
             fill="none"
             stroke="#164D33"
-            strokeWidth="22"
+            strokeWidth="30"
             strokeLinecap="round" 
             mask="url(#round-inner-cut)" // Applies the concave cut at the top
             style={{
@@ -294,7 +294,7 @@ const progress = 71; // Total progress (Completed + In Progress)
       </div>
 
       {/* Legend */}
-      <div className="flex justify-between items-center mt-8 px-2">
+      <div className="flex flex-wrap gap-1 justify-between items-center mt-8 px-2">
         <div className="flex items-center gap-2">
           <div className="w-4 h-4 rounded-full bg-[#2D8453]"></div>
           <span className="text-sm font-medium text-emerald-900">Completed</span>
