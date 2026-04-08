@@ -30,7 +30,7 @@ const progress = 71; // Total progress (Completed + In Progress)
       
       {/* --- HEADER --- */}
       <header className="flex flex sm:flex-row flex-wrap md:flex-row items-center justify-between gap-1 md:gap-4 mb-2 bg-gray-50 p-4 rounded-2xl  ">
-        <div className="relative w-full max-w-2xs ">
+        <div className="relative w-full max-w-2xs h-full ">
           <Search className="absolute left-3 top-1/2 -translate-y-1/2 size-4 text-slate-800" />
           <input 
             type="text" 
